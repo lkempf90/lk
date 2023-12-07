@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "//C:/Users/lkemp/OneDrive/Documents/Fall%2023%20Classes/CGT%20141/141_Project/DataVis.html">
+<html>
+<head>
+<title>Graphic Design Projects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+
+
+#container_whole{
+    width: 1460px;
+    height: auto;
+}
+
+#name_banner{
+    width:1460px;
+    height: 2000px;
+    background-color:rgb(133, 154, 136);
+}
+
+#name{
+    color: black;
+    font-family:"Garamond", serif;
+    font-size: 50pt;
+    padding-top: 110px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#container_bottom{
+    text-align: center;
+    padding-top: 55px;
+}
+
+#content{
+    float: middle;
+    width: 860px;
+}
+
+.projname{
+    color: black;
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    font-size: 20pt;
+    float: left;
+    padding-bottom: 5px;
+    margin: 35px;
+
+}
+
+
+
+.p1{
+    color: black;
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    font-size: 24pt;
+    float: center;
+    padding-bottom: 5px;
+    margin: 35px;
+}
+
+.p4{
+    color: black;
+    font-family: "Garamond", serif;
+    font-weight: normal;
+    font-size: 18pt;
+    padding-top: 15px;
+    margin: 35px;
+}
+
+.p5{
+    color: black;
+    font-family: "Garamond", serif;
+    font-weight: normal;
+    font-size: 12pt;
+    float:left;
+    margin: 20px;
+}
+
+.vis{
+    width: 600px;
+    height: 350px;
+}
+
+
+.gif{
+    width:140px;
+    height: 100px;
+}
+
+
+#DataSet{
+    display: block;
+    width: 80px;
+    height: 95px;
+    background: url("images/DataIcon.png") ;
+}
+
+
+#DataSet:hover{
+    background-position: 0 -23px;
+}
+
+#DataSet span{
+    position: aboslute;
+    top: -999em;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #a33a3a;
+}
+
+
+table, th, td {
+  border: 1px solid;
+  margin-left: 515px;
+}
+
+.h1{
+    color: black;
+    font-family: "Garamond", serif;
+    font-weight: normal;
+    font-size: 18pt;
+    float:center;
+    margin: 20px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>    
+  
+  <div id="container_whole">
+        <div id="name_banner">
+            <div id="name">
+                Graphic Design Class Projects                
+            </div>  
+            <div id="container_bottom">
+                <div class="p1">
+                    Over the course of the semester of Fall 2023, I have completed several graphic design related projects in various classes. The courses can be found in <a href="file:///C:/Users/lkemp/OneDrive/Documents/Fall%2023%20Classes/CGT%20141/141_Project/coursework.html"> Education</a>.
+                    On this page, I will show only one for now, but more of my work can be found at <a href="https://www.notion.so/Lily-Kempf-478aace2801e49bb95c04b86d01b3021?pvs=4"> Notion </a>.
+                </div>
+                <div class="projname">
+                    <u>Project One:</u>
+                </div>
+                <div class="p4">
+                    The first project will be a group project from a data visualization class. My group chose the topic of Purdue Men's Basketball and to answer the question of who will be the best player on the team this year? We analyzed data from the previous year to come to a final answer.
+                    Our team's website for this project can be found at: <a href="https://coffee-snowshoe-0ce.notion.site/Home-15f1cef18f334650b70ca28572e6241d?pvs=4">"Best Team"</a>.
+                </div>
+                <div class="p5">
+                    <a id="DataSet" href="https://purduesports.com/sports/mens-basketball/stats/2022-23" title="DataSet"><span></span></a>
+                </div>
+                <div class="p4">
+                    <u>Overview:</u> This page will analyze four players on the Purdue Men’s Basketball team from the 22-23 season that are in the starting five of the 23-24 season. The visualizations will show how much of a range a player can have between their worst and best game to show improvement of the players skills and ability.<br>
+                    <div class="p4">
+                        <u>The Selected Players: </u><br>
+                        Zach Edey: Senior, Postion - Center, Height - 7'4" <br>
+                        Fletcher Loyer: Sophomore, Position - Guard, Height - 6'4"<br>
+                        Braden Smith: Sophomore, Position - Guard, Height - 6'0"<br>
+                        Trey Kaufman-Renn: Sophomore, Position - Forward, Height - 6'9"
+                    </div>
+                    <div class="p4">
+                        <u>My Visualizations:</u> <br>
+                        <img class="vis" src="images/EdeyStat.png">
+                        <img class="vis" src="images/LoyerStat.png">
+                        <img class="vis" src="images/SmithStat.png">
+                        <img class="vis" src="images/TKRStat.png"> <br>
+                        <u>Conclusion of Individual Statistics: </u>Overall, Zach Edey had the most points, assists, and rebounds all together out of the four players. Zach Edey also shows the most improvement in points and rebounds, while Loyer and Kaufman-Renn show the same amount of improvement in assists.  <br>
+                        For more information about the data set, please click the "Data" icon above or for more information about the project, please go to our team website.
+                       <br>
+                        <div class="h1">Team Members:<br>
+
+                        <table>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                        </tr>
+                        <tr>
+                            <td>Lily</td>
+                            <td>Kempf</td>
+                        </tr>
+                        <tr>
+                            <td>Shayna</td>
+                            <td>Lane</td>
+                        </tr>
+                        <tr>
+                            <td>Drew</td>
+                            <td>Sellke</td>
+                        </tr>
+                        <tr>
+                            <td>Vaughn</td>
+                            <td>Valentino</td>
+                        </tr>
+                        </table>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
