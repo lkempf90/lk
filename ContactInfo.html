@@ -99,7 +99,26 @@ input[type=submit] {
     width: 100px;
 }
 
-    </style>
+</style>
+
+<script>
+        <form action="/url">
+...
+</form>
+----------------------------------------
+<!-- Perform an action in javascript-->
+<form name="myForm" action="" method="GET">
+Enter something in the box: <br>
+<input type="text" name="inputbox" value="">
+<input type="button" name="button" value="Click" onClick="testResults(this.form)">
+</form>
+<script>
+// Takes a form object and send an alert for what is typed
+function testResults (form) {
+var inputValue = form.inputbox.value;
+alert ("You typed: " + inputValue);
+}
+</script>
 
 </head>
 
